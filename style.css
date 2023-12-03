@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+/* Main */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: radial-gradient(circle at 100% 0%, #ffb85e 0, #ffa856 16.67%, #fe934b 33.33%, #f2793c 50%, #e55d30 66.67%, #dc442c 83.33%, #d62c2e 100%);
+  box-sizing: border-box;
+  
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Calc*/
+
+.calc {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.object {
+  width: 500px;
+  height: 550px;
+
+  background-color: rgba(205, 187, 187, 0.5);
+  border-radius: 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/* Display */
+
+.display {
+  width: 100%;
+  height: 70px;
+
+  border-radius: 20px;
+
+  background-color: rgba(223, 213, 213, 0.8);
+
+  padding-right: 35px;
+}
+
+.display_items {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sup_display_text {
+  text-align: right;
+  opacity: 0.7;
+  font-size: 0.9em;
+
+  height: 17.6px;
+}
+
+.display_text {
+
+  text-align: right;
+  font-size: 24px;
+}
+
+/* Buttons */
+
+.buttons {
+  margin-top: 70px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.space_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space_block:not(:first-of-type) {
+  margin-top: 50px;
+}
+
+.button {
+  height: 30px;
+  width: 70px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+/* Numbers */
+
+.numbers {
+  width: 60%;
+}
+
+.big_block_number {
+  width: 155px;
+}
+
+.numbers .button {
+  background-color: rgba(127, 134, 211, 0.8);
+
+  transition: background-color 0.2s linear;
+}
+
+.numbers .button:hover {
+  background-color: rgb(255, 174, 66, 0.8);
+}
+
+.numbers .big_block {
+  width: 155px;
+}
+
+/* Options */
+
+.options {
+  width: 37%;
+}
+
+.options .button {
+  background-color: rgba(179, 161, 63, 0.8);
+
+  transition: background-color 0.2s linear;
+}
+
+.options .button:hover {
+  background-color: rgb(186, 13, 66, 0.8);
+}
+
+.options .big_block {
+  width: 100%;
+}
